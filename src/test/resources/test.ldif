@@ -1,0 +1,83 @@
+dn: dc=example,dc=com
+objectClass: domain
+objectClass: top
+dc: example
+
+dn: ou=people,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+
+# --------------- ココア ---------------
+dn: cn=cocoa,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: gochiusaPerson
+cn: cocoa
+sn: hoto
+sn;local: 保登
+sn;katakana: ホト
+givenName: kokoa
+givenName;local: 心愛
+givenName;katakana: ココア
+height;cm: 154
+cv: 佐倉綾音
+cv;katakana: サクラアヤネ
+cafe: ラビットハウス
+
+# --------------- チノ ---------------
+dn: cn=chino,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: gochiusaPerson
+cn: chino
+sn: kafuu
+sn;local: 香風
+sn;katakana: カフウ
+givenName: chino
+givenName;local: 智乃
+givenName;katakana: チノ
+height;cm: 144
+cv: 水瀬いのり
+cv;katakana: ミナセイノリ
+cafe: ラビットハウス
+
+# --------------- リゼ ---------------
+dn: cn=rize,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: gochiusaPerson
+cn: rize
+sn: tedeza
+sn;local: 天々座
+sn;katakana: テデザ
+givenName: rize
+givenName;local: 理世
+givenName;katakana: リゼ
+height;cm: 160
+cv: 種田梨沙
+cv;katakana: タネダリサ
+cafe: ラビットハウス
+
+# --------------- モカ ---------------
+dn: cn=moca,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: gochiusaPerson
+cn: moca
+sn: hoto
+sn;local: 保登
+sn;katakana: ホト
+givenName: moca
+givenName;local: モカ
+givenName;katakana: モカ
+cv: 茅野愛衣
+cv;katakana: カヤノアイ

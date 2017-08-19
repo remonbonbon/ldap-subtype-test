@@ -1,0 +1,30 @@
+dn: cn=custom-schema,dc=example,dc=com
+objectClass: top
+objectClass: ldapSubEntry
+objectClass: subschema
+cn: custom-schema
+# --------------- ?? ---------------
+attributeTypes: ( 5555.100
+    NAME 'cv'
+    SUP name )
+attributeTypes: ( 5555.200
+    NAME 'height'
+    SUP name )
+attributeTypes: ( 5555.300
+    NAME 'cafe'
+    SUP name )
+# --------------- ????????? ---------------
+objectClasses: ( 9999.1
+    NAME 'gochiusaPerson'
+    SUP inetOrgPerson
+    STRUCTURAL
+    MUST (
+        cn
+    )
+    MAY (
+        sn $
+        givenName $
+        cv $
+        height $
+        cafe
+    ) )
